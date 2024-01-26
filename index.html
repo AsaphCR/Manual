@@ -16,12 +16,22 @@
             <a href="index.html"><img src="assets/images/Logo_CarolRossato_Preto.png" alt="Logo Carol Rossato" class="logo"></a>
             <nav class="menu">
                 <ul>
-                    <li><a id="ERP">ERP</a></li>
-                    <li><a href="PDV/">PDV</a></li>
+                    <li onclick="loadPage('erp')">ERP</li>
+                    <li onclick="loadPage('pdv')">PDV</li>
                 </ul>
             </nav>
         </header>
         <main>
+            <section>
+                <p>Esse é o manual de uso do sistema. Veja o índice para acessar a página que melhor lhe atende:</p>
+                <ul>
+                    <li onclick="loadPage('erp')">ERP</li>
+                    <ul>
+                        <li onclick="loadPage('entradaDeNotas')">Entrada de notas</li>
+                    </ul>
+                    <li onclick="loadPage('pdv')">PDV</li>
+                </ul>
+            </section>
         </main>
         <footer>
             <p>

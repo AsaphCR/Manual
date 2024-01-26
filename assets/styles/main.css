@@ -7,13 +7,13 @@
     color: #333333
 }
 
-a {
-    color: black;
-    text-decoration: none;
+li {
+    margin: 1vw;
 }
 
-a:hover {
+li:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Header */
@@ -26,18 +26,14 @@ header {
     box-shadow: 1px 1px 5px;
 }
 
-ul {
+header ul {
     display: flex;
     list-style: none;
     margin: 0px;
     padding: 0px;
 }
 
-li {
-    margin: 1vw;
-}
-
-.logo {
+header .logo {
     height: 2vw;
 }
 
@@ -47,7 +43,9 @@ footer {
     justify-content: center;
 }
 
-p{
+footer p{
     text-align: center;
     letter-spacing: 1.82px;
 }
+
+/* Main */
