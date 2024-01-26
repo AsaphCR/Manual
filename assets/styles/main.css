@@ -3,12 +3,13 @@
     box-sizing: border-box;
     font-family: sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-size: 1vw;
+    font-size: 1em;
     color: #333333
 }
 
 li {
     margin: 1vw;
+    width: fit-content;
 }
 
 li:hover {
@@ -24,6 +25,7 @@ header {
     justify-content: space-between;
     padding: 2vw 0 0 0;
     box-shadow: 1px 1px 5px;
+    width: 100%;
 }
 
 header ul {
@@ -34,11 +36,13 @@ header ul {
 }
 
 header .logo {
-    height: 2vw;
+    width: 20em;
+    max-width: 100%;
 }
 
 /* Footer */
 footer {
+    border-top: 1px solid #D8D8D8;
     display: flex;
     justify-content: center;
 }
@@ -49,3 +53,16 @@ footer p{
 }
 
 /* Main */
+main section {
+    margin: 1vw auto;
+    width: 90%;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 1.5vw;
+}
+
+main img {
+    width: 100%;
+}
