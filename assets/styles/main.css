@@ -13,7 +13,7 @@ li {
     width: fit-content;
 }
 
-li:hover {
+.navigation {
     text-decoration: underline;
     cursor: pointer;
 }

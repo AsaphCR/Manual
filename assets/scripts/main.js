@@ -1,12 +1,21 @@
 // Elementos
-let main = document.querySelector('main');
+let contentSection = document.querySelector('section');
+
 
 // Funções
 function loadPage(path) {
-    fetch(`pages/${path}.html`)
-        .then(response => response.text()) // Extract the text from the response
+    fetch(`${path}.html`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Page not found');
+            }
+            return response.text(); // Extract the text from the response
+        })
         .then(text => {
-            main.innerHTML = text;
-        }) // Call the clique function with the text
-        .catch(error => console.error('Error fetching data:', error)); // Handle any errors
+            contentSection.innerHTML = text;
+        }) // Dump the text from the response in the contentSection
+        .catch(error => {
+            console.error('Error:', error);
+            loadPage('404');
+        }); // Handle any errors
 }

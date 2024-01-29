@@ -10,14 +10,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel='stylesheet' type='text/css' media='screen' href='assets/styles/normalize.css'>
         <link rel='stylesheet' type='text/css' media='screen' href='assets/styles/main.css'>
+        <script src="assets/scripts/navigationMenu.js"></script>
     </head>
     <body>
         <header>
             <a href="index.html"><img src="assets/images/Logo_CarolRossato_Preto.png" alt="Logo Carol Rossato" class="logo"></a>
             <nav class="menu">
                 <ul>
-                    <li onclick="loadPage('erp')">ERP</li>
-                    <li onclick="loadPage('pdv')">PDV</li>
+                    <li class="navigation" onclick="loadPage('pages/erp')">ERP</li>
+                    <li class="navigation" onclick="loadPage('pages/pdv')">PDV</li>
                 </ul>
             </nav>
         </header>
@@ -25,11 +26,16 @@
             <section>
                 <p>Esse é o manual de uso do sistema. Veja o índice para acessar a página que melhor lhe atende:</p>
                 <ul>
-                    <li onclick="loadPage('erp')">ERP</li>
-                    <ul>
-                        <li onclick="loadPage('entradaDeNotas')">Entrada de notas</li>
-                    </ul>
-                    <!-- <li onclick="loadPage('pdv')">PDV</li> -->
+                    <li class="navigation" onclick="loadPage('pages/erp')">ERP</li>
+                    <ul class="erpIndex"></ul>
+                    <!-- <li class="navigation" onclick="loadPage('pages/pdv')">PDV</li>
+                    <ul class="pdvIndex"></ul> -->
+                    <script>
+                        let erpMenu = document.querySelector('.erpIndex');
+                        let pdvMenu = document.querySelector('.pdvIndex');
+                        navIndex(erpMenu, 'erpIndex');
+                        navIndex(pdvMenu, 'pdvIndex');
+                    </script>
                 </ul>
             </section>
         </main>
