@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+h1 {
+    font-weight: normal;
+}
+
 li {
     margin: 1vw;
     width: fit-content;
@@ -46,16 +50,18 @@ footer {
     border-top: 1px solid #D8D8D8;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-footer p{
-    text-align: center;
-    letter-spacing: 1.82px;
+footer h1 {
+    font-size: 1em;
+    letter-spacing: .182em;
 }
 
 /* Main */
 main section {
-    margin: 1vw auto;
+    margin: 1vw auto 0;
     width: 60%;
 }
 
@@ -66,4 +72,23 @@ main p {
 
 main img {
     width: 100%;
+    box-shadow: 0 0 .5em black;
+}
+
+#main-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#main-footer-item {
+    text-align: center;
+    box-sizing: border-box;
+    transition: all linear .2s;
+    width: 50%;
+}
+
+#main-footer-item:hover {
+    background-color: #333333;
+    color: white;
 }

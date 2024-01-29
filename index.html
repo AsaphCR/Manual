@@ -20,6 +20,8 @@
                 <ul>
                     <li class="navigation" onclick="loadPage('pages/erp')">ERP</li>
                     <li class="navigation" onclick="loadPage('pages/pdv')">PDV</li>
+                    <li class="navigation" onclick="loadPage('pages/troca')">Troca</li>
+                    <li class="navigation" onclick="loadPage('pages/preVenda')">Pré Venda</li>
                 </ul>
             </nav>
         </header>
@@ -31,19 +33,28 @@
                     <ul class="erpIndex"></ul>
                     <li class="navigation" onclick="loadPage('pages/pdv')">PDV</li>
                     <ul class="pdvIndex"></ul>
+                    <li class="navigation" onclick="loadPage('pages/troca')">Troca</li>
+                    <ul class="trocaIndex"></ul>
+                    <li class="navigation" onclick="loadPage('pages/preVenda')">Pré Venda</li>
+                    <ul class="preVendaIndex"></ul>
                     <script>
                         let erpMenu = document.querySelector('.erpIndex');
                         let pdvMenu = document.querySelector('.pdvIndex');
+                        // let trocaMenu = document.querySelector('.trocaIndex');
+                        // let preVendaMenu = document.querySelector('.preVendaIndex');
                         navIndex(erpMenu, 'erpIndex');
                         navIndex(pdvMenu, 'pdvIndex');
+                        // navIndex(trocaMenu, 'trocaIndex');
+                        // navIndex(preVendaMenu, 'preVendaIndex');
                     </script>
                 </ul>
             </section>
         </main>
         <footer>
-            <p>
-                FTG CONFECCAO E COMERCIO DE ROUPAS LTDA
-            </p>
+            <h1>
+                FTG CONFECÇAO E COMERCIO DE ROUPAS LTDA
+            </h1>
+            <p>Para suporte adicional entre em contato pelo número: <a href="https://web.whatsapp.com/send?phone=5521999575519" target="_blank">(21) 99957-5519</a>.</p>
         </footer>
     </body>
     <script src="assets/scripts/main.js"></script>
