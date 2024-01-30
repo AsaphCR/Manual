@@ -1,8 +1,18 @@
 <h1>Manual do ERP</h1>
 <p>Aqui você pode acessar os manuais para o uso do sistema Omie Online, que também chamamos de ERP.</p>
 <p>Para isso basta acessar o site <a href="https://portal.omie.com.br/meus-aplicativos" target="_blank">Omie</a></p>
-<ul class="erpIndex" style="color: red">
-    Inserir index
+<ul class="erpIndex">
+    <li class="navigation" onclick="loadPage('pages/entradaDeNotas')">Entrada de notas</li>
+    <li class="navigation" onclick="loadPage('pages/emissaoDeNotas')">Emissão de notas</li>
+    <ul>
+        <li class="navigation" onclick="loadPage('pages/transferencia')">Transferências</li>
+        <ul>
+            <li class="navigation" onclick="loadPage('pages/transferenciaEntreLojas')">Entre lojas</li>
+            <li class="navigation" onclick="loadPage('pages/transferenciaParaMatriz')">Para matriz</li>
+        </ul>
+        <li class="navigation" onclick="loadPage('pages/devolucao')">Devolução</li>
+        <li class="navigation" onclick="loadPage('pages/malinha')">Malinha</li>
+    </ul>
 </ul>
 <!-- <script>
     let erpMenu = document.querySelector('.erpIndex');
