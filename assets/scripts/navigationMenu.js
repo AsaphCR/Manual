@@ -1,4 +1,11 @@
-// let menuErp, menuPdv;
+// ERP paths
+let erp = 'pages/erp', entradaDeNotas = 'pages/entradaDeNotas', emissaoDeNotas = 'pages/emissaoDeNotas', transferencia = 'pages/transferencia', transferenciaEntreLojas = 'pages/transferenciaEntreLojas', transferenciaParaMatriz = 'pages/transferenciaParaMatriz', devolucao = 'pages/devolucao', malinha = 'pages/malinha', demonstracao = 'pages/demonstracao';
+
+// PDV paths
+
+// Troca paths
+
+// Pré-venda paths
 
 function navIndex(element, path) {
     fetch(`${path}.html`)
@@ -9,6 +16,3 @@ function navIndex(element, path) {
         .catch(error => {console.error('Error fetching data:', error)}); // Handle any errors
 }
 
-// menuErp = fetch('erpIndex.html').then(response => {if (!response.ok) {throw new Error('Network response was not ok');} return response.text();}).then(text => {console.log('Fetched ERP content:', text); menuErp = text; return text;}).catch(error => {console.error('Error fetching ERP data:', error);});
-
-// menuPdv = fetch(`${path}.html`).then(response => response.text()).then(text => {return text;}).catch(error => {console.error('Error fetching data:', error)});
