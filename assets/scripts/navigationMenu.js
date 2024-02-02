@@ -8,6 +8,7 @@ let pdv = 'pages/pdv', venda = 'pages/venda', cancelamentoCupom = 'pages/cancela
 let troca = 'pages/troca', trocaNaLoja = 'pages/trocaNaLoja', trocaEntreLojas = 'pages/trocaEntreLojas';
 
 // Pré-venda paths
+let preVenda = 'pages/preVenda'
 
 function navIndex(element, path) {
     fetch(`${path}.html`)
