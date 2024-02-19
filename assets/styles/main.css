@@ -106,7 +106,7 @@ main img {
 }
 
 .scrollToTop {
-    border: rgba(0, 0, 0, 0.2) solid 0.3vw;
+    border: rgba(0, 0, 0, 0.2) solid 0.1vw;
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -114,7 +114,7 @@ main img {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 93%;
-    left: 93%;
+    top: calc(100% - 60px);
+    left: calc(100% - 60px);
     cursor: pointer;
 }
