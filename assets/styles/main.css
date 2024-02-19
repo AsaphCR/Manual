@@ -96,7 +96,7 @@ main img {
 .backOnTroca {
     margin: 0 0 .5vw 0;
     padding: 1vw;
-    text-align: center;
+    text-align: justify;
     transition: all .2s linear;
     cursor: pointer;
 }

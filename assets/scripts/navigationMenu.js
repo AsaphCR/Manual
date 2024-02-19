@@ -1,5 +1,6 @@
 // ERP paths
-let erp = 'pages/erp/erp', entradaDeNotas = 'pages/erp/entradaDeNotas', emissaoDeNotas = 'pages/erp/emissaoDeNotas', transferencia = 'pages/erp/transferencia', transferenciaEntreLojas = 'pages/erp/transferenciaEntreLojas', transferenciaParaMatriz = 'pages/erp/transferenciaParaMatriz', devolucao = 'pages/erp/devolucao', malinha = 'pages/erp/malinha', demonstracao = 'pages/erp/demonstracao';
+let erpPath = 'pages/erp/'
+let erp = erpPath+'erp', entradaDeNotas = erpPath+'entradaDeNotas', entradaFabrica = erpPath+'entradaFabrica', entradaMalinha = erpPath+'entradaMalinha', emissaoDeNotas = erpPath+'emissaoDeNotas', transferencia = erpPath+'transferencia', transferenciaEntreLojas = erpPath+'transferenciaEntreLojas', transferenciaParaMatriz = erpPath+'transferenciaParaMatriz', devolucao = erpPath+'devolucao', saidaMalinha = erpPath+'saidaMalinha', demonstracao = erpPath+'demonstracao';
 
 // PDV paths
 let pdv = 'pages/pdv/pdv', venda = 'pages/pdv/vendaPDV', cancelamentoCupom = 'pages/pdv/cancelamentoCupom', reimpressaoCupom = 'pages/pdv/reimpressaoCupom';
