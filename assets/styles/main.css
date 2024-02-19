@@ -104,3 +104,17 @@ main img {
 .backOnTroca:hover {
     box-shadow: 0 0 5px black;
 }
+
+.scrollToTop {
+    border: rgba(0, 0, 0, 0.2) solid 0.3vw;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 94%;
+    left: 94%;
+    cursor: pointer;
+}
